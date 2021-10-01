@@ -17,21 +17,22 @@ import com.karumi.dexter.MultiplePermissionsReport
 import com.karumi.dexter.PermissionToken
 import com.karumi.dexter.listener.PermissionRequest
 import com.karumi.dexter.listener.multi.MultiplePermissionsListener
-import com.pam.parimatch.appp.databinding.ActivityWebViewBinding
+import com.pam.parimatch.appp.databinding.ActivityMain2ike33Binding
+import com.pam.parimatch.appp.databinding.ActivityWebView2ike33Binding
 import java.io.File
 import java.text.SimpleDateFormat
 import java.util.*
 
 class WebViewActivity : AppCompatActivity() {
 
-    private lateinit var binding2ike33: ActivityWebViewBinding
+    private lateinit var binding2ike33: ActivityWebView2ike33Binding
     private var filepathBack2ike33: ValueCallback<Array<Uri>>? = null
     private var uriView2ike33 = Uri.EMPTY
     private lateinit var viewmodel2ike33: ViewModel2ike33
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding2ike33 = ActivityWebViewBinding.inflate(layoutInflater)
+        binding2ike33 = ActivityWebView2ike33Binding.inflate(layoutInflater)
         setContentView(binding2ike33.root)
 
         viewmodel2ike33 = ViewModelProvider(this)[ViewModel2ike33::class.java]

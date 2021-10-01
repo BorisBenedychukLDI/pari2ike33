@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
-import com.pam.parimatch.appp.databinding.ActivityMainBinding
+import com.pam.parimatch.appp.databinding.ActivityMain2ike33Binding
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
@@ -14,11 +14,11 @@ import kotlinx.coroutines.launch
 class SplashActivity2ike33 : AppCompatActivity() {
 
     private lateinit var viewModel2ike332Ike33: ViewModel2ike33
-    private lateinit var bind2ike33: ActivityMainBinding
+    private lateinit var bind2ike33: ActivityMain2ike33Binding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        bind2ike33 = ActivityMainBinding.inflate(layoutInflater)
+        bind2ike33 = ActivityMain2ike33Binding.inflate(layoutInflater)
         setContentView(bind2ike33.root)
         getSharedPreferences("SP_2ike33", MODE_PRIVATE).getString("Last_Page_2ike33", null)?.run {
             startActivity(Intent(this@SplashActivity2ike33, WebViewActivity::class.java))
@@ -66,9 +66,6 @@ class SplashActivity2ike33 : AppCompatActivity() {
             duration = 1000
         }
         bind2ike33.ivRightstr22ike33.animate().translationX(2000f).translationY(-2000f).run {
-            duration = 1000
-        }
-        bind2ike33.ivMainstr2ike33.animate().translationX(2000f).run {
             duration = 1000
         }
         bind2ike33.tvEnter2ike33.animate().alpha(0f).run {
