@@ -37,7 +37,7 @@ class SplashActivity2ike33 : AppCompatActivity() {
                             bind2ike33.tvEnter2ike33.isClickable = false
                             animaSetup2ike33()
                             lifecycleScope.launch {
-                                delay(4000)
+                                delay(5000)
                             viewModel2ike332Ike33.getUrl2ike33(this@SplashActivity2ike33.packageName)
                             viewModel2ike332Ike33.urlLiveData2ike33.observe(this@SplashActivity2ike33) { url ->
                                 url?.run {
@@ -72,7 +72,7 @@ class SplashActivity2ike33 : AppCompatActivity() {
             duration = 500
         }
         bind2ike33.pbLoading2ike33.animate().alpha(1f).run {
-            startDelay = 1500
+            startDelay = 1000
         }
     }
 
