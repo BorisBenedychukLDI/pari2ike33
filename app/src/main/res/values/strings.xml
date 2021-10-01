@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Париматч</string>
+    <string name="enter_2ike33">Войти</string>
+    <string name="no_internet_connection_2ike33">Интернет-соединение осутствует</string>
+    <string name="button_restart_internet_2ike33">Button restart internet</string>
+</resources>
