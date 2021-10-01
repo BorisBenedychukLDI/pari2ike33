@@ -34,12 +34,13 @@ class SplashActivity2ike33 : AppCompatActivity() {
                     if (firebase) {
                         buttonShowUp2ike33()
                         bind2ike33.tvEnter2ike33.setOnClickListener {
+                            bind2ike33.tvEnter2ike33.isClickable = false
                             animaSetup2ike33()
-                            viewModel2ike332Ike33.getUrl2ike33(this.packageName)
-                            viewModel2ike332Ike33.urlLiveData2ike33.observe(this) { url ->
+                            lifecycleScope.launch {
+                                delay(4000)
+                            viewModel2ike332Ike33.getUrl2ike33(this@SplashActivity2ike33.packageName)
+                            viewModel2ike332Ike33.urlLiveData2ike33.observe(this@SplashActivity2ike33) { url ->
                                 url?.run {
-                                    lifecycleScope.launch {
-                                        delay(4000)
                                         startActivity(
                                             Intent(
                                                 this@SplashActivity2ike33,
